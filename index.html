@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Contele</title>
-    <script src="./aula.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>Projeto Contele</title> 
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <fieldset>    
+    <main> 
         <form name ="conteleCadastro" action="Manutencao.html" method="post"> 
             
-        <h2>Contact Information: </h2> <br />        
+            <h2>Contact Information: </h2> <br />  
+
             <input type="text" name="firstName" class="fname" id="firsName" placeholder="Firs Name "required ="required" /> 
             <input type="text" name="lastName " class="lname"id="lastName" placeholder="Last Name "required ="required" />
             <br /><input type="email" name="E-mail " class="email" id="email" placeholder="E-mail "required ="required" />
@@ -26,12 +26,11 @@
                 <option value="brasil"> Brasil </option>
                 <option value=" estadosUnidos"> USA</option>
             </select> 
-            <select name="Country" class="country" id="selLanguage">
-                <option value="brasil"> Portugues </option>
-                <option value=" Ingles"> Ingles </option>
+            <select name="contries" id="contries"></select>
             </select> <br />
 
         <h2>Shipping Address: </h2> <br />
+
             <input type="text" name="AddressLine1" placeholder="Address Line 1" required ="required" /><br />
             <input type="text" name="AddressLine2" placeholder="Address Line 2" required ="required" /><br />
             <select name="City" id="selCity" required ="required">
@@ -59,6 +58,7 @@
                 </select> <br />
                 
         <h2>Check the boxes below: </h2> <br />
+
             <label for="box1">Does any vehicle need to be equiped wich a fuel cut off device</label>
             <input type="checkbox" name="box1" id="box1" value="Does any vehicle need to be equiped wich a fuel cut off device"><br/>
             <label for="box2">Will any trackers be installed on a bike truck or machinery ? </label>
@@ -71,8 +71,9 @@
     </fieldset>
         <br/><br /> <input type="submit" class="botao" name="enviar"  value="Order Now"><br/><br />
 
-        </form>  
-     
+    </form> 
+    <script src="./js/script.js"></script>
+</main>    
 
 </body>
 </html>
