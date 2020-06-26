@@ -14,66 +14,74 @@
             
             <h2>Contact Information: </h2> <br />  
 
-            <input type="text" name="firstName" class="fname" id="firsName" placeholder="Firs Name "required ="required" /> 
-            <input type="text" name="lastName " class="lname"id="lastName" placeholder="Last Name "required ="required" />
-            <br /><input type="email" name="E-mail " class="email" id="email" placeholder="E-mail "required ="required" />
-            <select type="tel" name="phone" class="phone" id="setPhone">
-                <option value="Phone">Phone</option>
-                <option value="Cell">Cell</option>
-                <option value="Fixo">Fixo</option>
-            </select>
-            <br /><select name="Language" class="Language" id="selLanguage">
-                <option value="brasil"> Brasil </option>
-                <option value=" estadosUnidos"> USA</option>
-            </select> 
-            <select name="contries" id="contries"></select>
-            </select> <br />
+                <input type="text" name="firstName" class="contactInformation" placeholder="Firs Name "required ="required" /> 
+                <input type="text" name="lastName " class="contactInformation" placeholder="Last Name "required ="required" /><br />
+                <input type="email"name="E-mail " class="contactInformation"   placeholder="E-mail "required ="required" />
+           
+                <select type="tel" name="phone" class="contactInformation">
+                    <option value="Phone">Phone</option>
+                </select><br />
 
-        <h2>Shipping Address: </h2> <br />
-
-            <input type="text" name="AddressLine1" placeholder="Address Line 1" required ="required" /><br />
-            <input type="text" name="AddressLine2" placeholder="Address Line 2" required ="required" /><br />
-            <select name="City" id="selCity" required ="required">
-                <option value="City"> City  </option>
+                <select name="Language" class="contactInformation" id="selLanguage">
+                    <option value="portugues"> Portuguese </option>
+                    <option value="english"> English</option>
                 </select> 
-            <select name="State" id="selState" required ="required">
-                <option value="State"> State </option>
+
+                <select name="contries" class="contactInformation" id="contries"> </select>
+
+            <h2>Shipping Address: </h2> <br />
+
+                <input type="text" name ="AddressLine1" class="shippingAddress" placeholder="Address Line 1" required ="required" /><br />
+                <input type="text" name="AddressLine2" class="shippingAddress" placeholder="Address Line 2" required ="required" /><br />
+            
+                <select name="City" class="shippingAddress" required ="required">
+                    <option value="City"> City  </option>
                 </select>
-            <select name="ZipCode" id="selzioeCode" required ="required">
-                <option value="Zip Code"> ZipCode </option>
+
+                <select name="State" class="shippingAddress" required ="required">
+                     <option value="State"> State </option>
+                </select>
+
+                <select name="ZipCode" class="shippingAddress" required ="required">
+                    <option value="Zip Code"> ZipCode </option>
                 </select><br /> 
 
-        <h2>Billing Address: </h2>
+            <h2>Billing Address: </h2>
 
-            <input type="text" name="AddressLine1" placeholder="Address Line 1" required ="required" /><br />
-            <input type="text" name="AddressLine2" placeholder="Address Line 2" required ="required" /><br />
-            <select name="City" id="selCity" required ="required">
-                <option value="City"> City  </option>
+                <input type="text" name="AddressLine1" class="billingAddress" placeholder="Address Line 1" required ="required" /><br />
+                <input type="text" name="AddressLine2" class="billingAddress" placeholder="Address Line 2" required ="required" /><br />
+            
+                <select name="City" class="billingAddress" required ="required">
+                    <option value="City"> City  </option>
                 </select>
-            <select name="State" id="selState" required ="required">
-                <option value="State"> State </option>
+
+                <select name="State" class="billingAddress" required ="required">
+                    <option value="State"> State </option>
                 </select> 
-            <select name="ZipCode" id="selzioeCode" required ="required">
-                <option value="Zip Code"> ZipCode </option>
+
+                <select name="ZipCode" class="billingAddress" required ="required">
+                    <option value="Zip Code"> ZipCode </option>
                 </select> <br />
                 
         <h2>Check the boxes below: </h2> <br />
 
-            <label for="box1">Does any vehicle need to be equiped wich a fuel cut off device</label>
-            <input type="checkbox" name="box1" id="box1" value="Does any vehicle need to be equiped wich a fuel cut off device"><br/>
-            <label for="box2">Will any trackers be installed on a bike truck or machinery ? </label>
-            <input type="checkbox" name="box1" id="box2" value="Will any trackers be installed on a bike truck or machinery ?"><br/>
-            <label for="box3"> Will you need to identify the feet drivers </label>
-            <input type="checkbox" name="box1" id="box3" value="Will you need to identify the feet drivers "><br/><br />
-            <input type="number" name="trackers" placeholder="how many trackers would you like to purchase"/>
-        <br/><br/><label for="box4">Use shipping same as billing Address</label>
-        <input type="checkbox" name="box4" id="box4" value= copiarBilling><br/>    
-    </fieldset>
-        <br/><br /> <input type="submit" class="botao" name="enviar"  value="Order Now"><br/><br />
+                <label for="box1">Does any vehicle need to be equiped wich a fuel cut off device</label>
+                <input type="checkbox" name="box1" class="check" value="vehicle"><br/>
 
-    </form> 
-    <script src="./js/script.js"></script>
-</main>    
+                <label for="box2">Will any trackers be installed on a bike truck or machinery ? </label>
+                <input type="checkbox" name="box2" class="check" value="trackers"><br/>
 
+                <label for="box3"> Will you need to identify the feet drivers </label>
+                <input type="checkbox" name="box3" class="check" value="identify "><br/><br />
+
+                <input type="number" name="trackers" class="checkText" placeholder="how many trackers would you like to purchase"/><br/><br/>
+                <label for="box4">Use shipping same as billing Address</label>
+
+            <input type="checkbox" name="box4" id="box4" value= copiarBilling><br/><br/><br />   
+
+            <input type="submit" class="botao" name="enviar"  value="Order Now"><br/><br />
+            <script src="./js/script.js"></script>
+        </form> 
+    </main>    
 </body>
 </html>
