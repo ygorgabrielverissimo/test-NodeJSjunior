@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <main> 
+<body> 
+    <div>
         <form name ="conteleCadastro" action="Manutencao.html" method="post"> 
-            
+            <div id="containerA">
             <h2>Contact Information: </h2> <br />  
-
                 <input type="text" name="firstName" class="contactInformation" placeholder="Firs Name "required ="required" /> 
                 <input type="text" name="lastName " class="contactInformation" placeholder="Last Name "required ="required" /><br />
                 <input type="email"name="E-mail " class="contactInformation"   placeholder="E-mail "required ="required" />
@@ -21,14 +20,13 @@
                 <select type="tel" name="phone" class="contactInformation">
                     <option value="Phone">Phone</option>
                 </select><br />
-
                 <select name="Language" class="contactInformation" id="selLanguage">
                     <option value="portugues"> Portuguese </option>
                     <option value="english"> English</option>
                 </select> 
-
-                <select name="contries" class="contactInformation" id="contries"> </select>
-
+                 <select name="contries" class="contactInformation" id="contries"> </select>
+            </div>
+            <div id="containerB">    
             <h2>Shipping Address: </h2> <br />
 
                 <input type="text" name ="AddressLine1" class="shippingAddress" placeholder="Address Line 1" required ="required" /><br />
@@ -37,15 +35,16 @@
                 <select name="City" class="shippingAddress" required ="required">
                     <option value="City"> City  </option>
                 </select>
-
+            
                 <select name="State" class="shippingAddress" required ="required">
                      <option value="State"> State </option>
                 </select>
 
                 <select name="ZipCode" class="shippingAddress" required ="required">
                     <option value="Zip Code"> ZipCode </option>
-                </select><br /> 
-
+                </select>
+            </div>
+            <div id="containerC">
             <h2>Billing Address: </h2>
 
                 <input type="text" name="AddressLine1" class="billingAddress" placeholder="Address Line 1" required ="required" /><br />
@@ -61,9 +60,10 @@
 
                 <select name="ZipCode" class="billingAddress" required ="required">
                     <option value="Zip Code"> ZipCode </option>
-                </select> <br />
-                
-        <h2>Check the boxes below: </h2> <br />
+                </select>
+            </div>
+            <div id="containerD">
+            <h2>Check the boxes below: </h2>
 
                 <label for="box1">Does any vehicle need to be equiped wich a fuel cut off device</label>
                 <input type="checkbox" name="box1" class="check" value="vehicle"><br/>
@@ -75,13 +75,14 @@
                 <input type="checkbox" name="box3" class="check" value="identify "><br/><br />
 
                 <input type="number" name="trackers" class="checkText" placeholder="how many trackers would you like to purchase"/><br/><br/>
-                <label for="box4">Use shipping same as billing Address</label>
-
-            <input type="checkbox" name="box4" id="box4" value= copiarBilling><br/><br/><br />   
-
-            <input type="submit" class="botao" name="enviar"  value="Order Now"><br/><br />
-            <script src="./js/script.js"></script>
-        </form> 
+           
+                <label for="box4" class="box4">Use shipping same as billing Address</label>s   
+                <input type="checkbox" name="box4" class="box4" value= copiarBilling><br/><br/><br />   
+            </div>  
+                <input type="submit" class="botao" name="enviar"  value="Order Now"><br/><br />
+                <script src="./js/script.js"></script>
+        </form>
+        </div> 
     </main>    
 </body>
 </html>
