@@ -7,82 +7,89 @@
     <title>Projeto Contele</title> 
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body> 
-    <div>
-        <form name ="conteleCadastro" action="Manutencao.html" method="post"> 
+    <form name ="conteleCadastro" action="Manutencao.html" method="post"> 
+        <div>        
             <div id="containerA">
             <h2>Contact Information: </h2> <br />  
-                <input type="text" name="firstName" class="contactInformation" placeholder="Firs Name "required ="required" /> 
-                <input type="text" name="lastName " class="contactInformation" placeholder="Last Name "required ="required" /><br />
-                <input type="email"name="E-mail " class="contactInformation"   placeholder="E-mail "required ="required" />
+                <input type="text" name="firstName" class="contactInformationText" placeholder="Firs Name "required ="required" /> 
+                <input type="text" name="lastName " class="contactInformationText" placeholder="Last Name "required ="required" /><br />
+                <input type="email"name="E-mail " class="contactInformationText"   placeholder="E-mail "required ="required" />
            
-                <select type="tel" name="phone" class="contactInformation">
+                <select type="tel" name="phone" class="contactInformationBoton">
                     <option value="Phone">Phone</option>
                 </select><br />
-                <select name="Language" class="contactInformation" id="selLanguage">
+
+                <select name="Language" class="contactInformationBoton" id="selLanguage">
                     <option value="portugues"> Portuguese </option>
                     <option value="english"> English</option>
-                </select> 
-                 <select name="contries" class="contactInformation" id="contries"> </select>
+                </select>
+
+                 <select name="contries" class="contactInformationBoton" id="contries"> </select>
             </div>
-            <div id="containerB">    
+
+            <div id="containerB">  
             <h2>Shipping Address: </h2> <br />
 
-                <input type="text" name ="AddressLine1" class="shippingAddress" placeholder="Address Line 1" required ="required" /><br />
-                <input type="text" name="AddressLine2" class="shippingAddress" placeholder="Address Line 2" required ="required" /><br />
+                <input type="text" name="AddressLine1" class="shippingAddressText" placeholder="Address Line 1" required ="required" /><br />
+                <input type="text" name="AddressLine2" class="shippingAddressText" placeholder="Address Line 2" required ="required" /><br />
             
-                <select name="City" class="shippingAddress" required ="required">
+                <select name="City" class="shippingAddressBoton" required ="required">
                     <option value="City"> City  </option>
                 </select>
             
-                <select name="State" class="shippingAddress" required ="required">
+                <select name="State" class="shippingAddressBoton" required ="required">
                      <option value="State"> State </option>
                 </select>
 
-                <select name="ZipCode" class="shippingAddress" required ="required">
+                <select name="ZipCode" class="shippingAddressBoton" required ="required">
                     <option value="Zip Code"> ZipCode </option>
                 </select>
             </div>
+
             <div id="containerC">
             <h2>Billing Address: </h2>
 
-                <input type="text" name="AddressLine1" class="billingAddress" placeholder="Address Line 1" required ="required" /><br />
-                <input type="text" name="AddressLine2" class="billingAddress" placeholder="Address Line 2" required ="required" /><br />
+                <input type="text" name="AddressLine1" class="billingAddressText" placeholder="Address Line 1" required ="required" /><br />
+                <input type="text" name="AddressLine2" class="billingAddressText" placeholder="Address Line 2" required ="required" /><br />
             
-                <select name="City" class="billingAddress" required ="required">
+                <select name="City" class="billingAddressBoton" required ="required">
                     <option value="City"> City  </option>
                 </select>
 
-                <select name="State" class="billingAddress" required ="required">
+                <select name="State" class="billingAddressBoton" required ="required">
                     <option value="State"> State </option>
                 </select> 
 
-                <select name="ZipCode" class="billingAddress" required ="required">
+                <select name="ZipCode" class="billingAddressBoton" required ="required">
                     <option value="Zip Code"> ZipCode </option>
                 </select>
             </div>
+
             <div id="containerD">
             <h2>Check the boxes below: </h2>
 
-                <label for="box1">Does any vehicle need to be equiped wich a fuel cut off device</label>
-                <input type="checkbox" name="box1" class="check" value="vehicle"><br/>
+                <label for="checkbox1">Does any vehicle need to be equiped wich a fuel cut off device</label>
+                <input type="checkbox" id="box1" class="checkbox" value="vehicle"><br/>
 
-                <label for="box2">Will any trackers be installed on a bike truck or machinery ? </label>
-                <input type="checkbox" name="box2" class="check" value="trackers"><br/>
+                <label for="checkbox2">Will any trackers be installed on a bike truck or machinery ?</label>
+                <input type="checkbox" id="checkbox2" class="checkbox"value="tranckers"><br/>
 
-                <label for="box3"> Will you need to identify the feet drivers </label>
-                <input type="checkbox" name="box3" class="check" value="identify "><br/><br />
+                <label for="checkbox3"> Will you need to identify the feet drivers </label>
+                <input type="checkbox" id="checkbox3" class="checkbox" value="identify "><br/><br />
 
-                <input type="number" name="trackers" class="checkText" placeholder="how many trackers would you like to purchase"/><br/><br/>
-           
-                <label for="box4" class="box4">Use shipping same as billing Address</label>s   
-                <input type="checkbox" name="box4" class="box4" value= copiarBilling><br/><br/><br />   
-            </div>  
-                <input type="submit" class="botao" name="enviar"  value="Order Now"><br/><br />
+                <input type="number" name="trackers" class="box" placeholder="how many trackers would you like to purchase"/><br/><br/>
+            </div>
+
+            <div id="containerE">
+            <label for="box4">Use shipping same as billing Address</label>
+
+                <input type="checkbox" name="box4" class="checkbox" value= copiarBilling>
+                </div>
+        
+                <input type="submit" class="botao" name="enviar"  value="Order Now"><br/>
                 <script src="./js/script.js"></script>
-        </form>
-        </div> 
-    </main>    
+        </div>  
+    </form>     
 </body>
 </html>
